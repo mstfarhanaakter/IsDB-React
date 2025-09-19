@@ -31,14 +31,14 @@ const handleVisited = ()=> {
 }
 
     return (
-        <div className={`border-2 p-3 rounded-[12px] space-y-2 border-blue-500 ${visited? 'bg-amber-400': 'not-visited'} `}>
-           <img src={country.flags.flags.png} alt={country.flags.flags.alt } /> 
+        <div className={`border-2 p-3 rounded-[12px] space-y-2 border-blue-500 ${visited? 'bg-[#EEAECA]': 'not-visited'} `}>
+           <img className='block mx-auto' src={country.flags.flags.png} alt={country.flags.flags.alt} /> 
            <p>Name: {country.name.common} </p>
            <p>Capital: {country.capital.capital}</p>
            <p>Population: {country.population.population} </p>
            <p>Area: {country.area.area} {country.area.area >250000 ? 'Big Country': 'Small Country'}</p>
            <br />
-           <div className='flex gap-4'>
+           <div className='flex flex-col gap-4 md:flex-row items-center'>
             <button onClick={handleVisited}>{visited? 'Visited': 'Not Visited'}</button>
            <button onClick={() => {handlevistiedFlags(country?.flags?.flags?.png)}} >Add Visited Flag</button>
            </div>
