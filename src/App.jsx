@@ -1,24 +1,28 @@
 
+import { Suspense } from 'react'
 import './App.css'
-import Header from './header.jsx'
+import Countries from './components/countries/Countries'
+
+const countriesPromise  = fetch ('https://openapi.programming-hero.com/api/all')
+.then(res => res.json())
+
 
 function App() {
 //  const loggedIn = true;
+
+
  
  
 return(
-  <div>
-  <Header />  
-  <h1 className='bg-red-500 text-white'>Vite+React</h1>
-  
-  <h1>headerr</h1>
-  <h1>nav </h1>
-  <h1>main</h1>
-  <h1>footer</h1>
+  <div> 
+    <Suspense fallback={<p>Data Loading........</p>}>
+    <Countries countriesPromise={countriesPromise}></Countries>
 
-  <p>this is a paragraph</p>
-  <p>this is a paragraph</p>
-  <p>this is a paragraph</p>
+    </Suspense>
+  
+  
+  
+  
   </div>
   
   
