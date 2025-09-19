@@ -31,9 +31,10 @@ const handleVisited = ()=> {
 }
 
     return (
-        <div className={`border-2 p-3 rounded-[12px] border-blue-500 ${visited? 'bg-amber-400': 'not-visited'} `}>
-           <img src={country.flags.flags.png} alt={country.flags.flags.alt} /> 
+        <div className={`border-2 p-3 rounded-[12px] space-y-2 border-blue-500 ${visited? 'bg-amber-400': 'not-visited'} `}>
+           <img src={country.flags.flags.png} alt={country.flags.flags.alt } /> 
            <p>Name: {country.name.common} </p>
+           <p>Capital: {country.capital.capital}</p>
            <p>Population: {country.population.population} </p>
            <p>Area: {country.area.area} {country.area.area >250000 ? 'Big Country': 'Small Country'}</p>
            <br />

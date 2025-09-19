@@ -4,12 +4,12 @@ import Country from '../country/Country';
 
 
 
-const Countries = ({countriesPromise}) => {
+const Countries = ({ countriesPromise }) => {
     const countriesData = use(countriesPromise)
     const data = countriesData.countries
 
     console.log(countriesData)
-    
+
 
     const [visitedCountries, setVisitedCountries] = useState([])
 
@@ -20,13 +20,13 @@ const Countries = ({countriesPromise}) => {
 
     }
 
-    const  [vistitedFlags, setVistiedFlags] = useState([])
-    const handlevistiedFlags = (country)=> {
+    const [vistitedFlags, setVistiedFlags] = useState([])
+    const handlevistiedFlags = (country) => {
         console.log("visited flag clicked")
         const newVisitedFlag = [...vistitedFlags, country]
         setVistiedFlags(newVisitedFlag)
     }
-    
+
     return (
         <div>
             <h1 className='text-[12px]'>Total Countries: {data.length} </h1>
@@ -37,33 +37,33 @@ const Countries = ({countriesPromise}) => {
                 }
                 
             </ol> */}
-            
-                <p>Total Flag Visited: {vistitedFlags.length} </p>
+
+            <p>Total Flag Visited: {vistitedFlags.length} </p>
             <div className='w-[100px] flex gap-3'>
-            {
-                vistitedFlags.map((flag, index) => <img key={index} src={flag} /> )
-            }
+                {
+                    vistitedFlags.map((flag, index) => <img key={index} src={flag} />)
+                }
             </div>
-            
+
             <div className='grid grid-cols-3 gap-4 p-2'>
-        {
-            data.map((country) => 
-            <Country
-            key = {country.cca3.cca3} 
-            country={country}
-            handleVisitedCountries = {handleVisitedCountries}
-            handlevistiedFlags = {handlevistiedFlags}
+                {
+                    data.map((country) =>
+                        <Country
+                            key={country.cca3.cca3}
+                            country={country}
+                            handleVisitedCountries={handleVisitedCountries}
+                            handlevistiedFlags={handlevistiedFlags}
 
-            >
-            </Country>)
-        }
-                
+                        >
+                        </Country>)
+                }
+
 
             </div>
 
-            
-            
-            
+
+
+
         </div>
     );
 };
