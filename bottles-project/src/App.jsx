@@ -1,24 +1,20 @@
+import React, { Suspense } from 'react';
+import Bottles from './components/Bottles/Bottles';
 
-import { Suspense } from 'react'
-import './App.css'
-import Bottles from './components/Bottles/Bottles'
+const bottlePromise = fetch('/public/bottles.json').then(res => res.json())
 
-const fetchURL = fetch('https://raw.githubusercontent.com/jhankarpHero/bottles-data/refs/heads/main/bottles.json')
-.then(res => res.json())
-function App() {
-  
-
+const App = () => {
   return (
     <>
 
-    <Suspense fallback={<p>Bottles Picture Are Loading...</p>}>
-
+    <Suspense fallback={"Bottles are loading....."}>
+      <Bottles bottlePromise={bottlePromise} />
     </Suspense>
-      <h1>Hello</h1>
-      <Bottles fetchURL={fetchURL}></Bottles>    
-      
-      </>
-  )
-}
+    
+    
+    
+    </>
+  );
+};
 
-export default App
+export default App;
