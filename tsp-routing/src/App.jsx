@@ -1,5 +1,3 @@
-
-import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router";
 import Home from './components/Home/Home';
 import AboutUs from './components/About-Us/AboutUs';
@@ -27,6 +25,8 @@ function App() {
 
 
       </BrowserRouter>
+
+      <h1 className="bg-red-500 text-white"> Hello</h1>
 
     </>
   )
