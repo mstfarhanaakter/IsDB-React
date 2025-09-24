@@ -1,48 +1,41 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import Footer from './Footer';
 
-const Nav = () => {
+export default function Navbar() {
   return (
-    <>
-    <nav className="navbar navbar-expand-lg bg-warning">
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/">Navbar</Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link className="nav-link active" to="/contact">Home</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/link">Link</Link>
-            </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul className="dropdown-menu">
-                <li><Link className="dropdown-item" to="/action">Action</Link></li>
-                <li><Link className="dropdown-item" to="/another-action">Another action</Link></li>
-                <li><hr className="dropdown-divider" /></li>
-                <li><Link className="dropdown-item" to="/something-else">Something else here</Link></li>
-              </ul>
-            </li>
-            <li className="nav-item">
-              <span className="nav-link disabled" aria-disabled="true">Disabled</span>
-            </li>
-          </ul>
-          <form className="d-flex" role="search">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-outline-success" type="submit">Search</button>
-          </form>
+    <div className="min-h-screen flex flex-col">
+      {/* Top Navbar */}
+      <nav className="bg-[#f390a6] text-black px-6 py-4">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          <div className="text-xl font-bold">Pharma</div>
+          <div className="hidden md:flex space-x-6">
+            <a href="#" className="hover:text-gray-300">Home</a>
+            <a href="#" className="hover:text-gray-300">About</a>
+            <a href="#" className="hover:text-gray-300">Contact</a>
+          </div>
         </div>
-      </div>
-    </nav>
-    </>
-  );
-};
+      </nav>
 
-export default Nav;
+      {/* Content Area with Sidebar */}
+      <div className="flex flex-1 flex-col md:flex-row">
+        {/* Sidebar */}
+        <aside className="bg-gray-100 w-full md:w-64 p-4 border-r">
+          <ul className="space-y-2">
+            <li><a href="#" className="block px-2 py-1 hover:bg-gray-200 rounded">Dashboard</a></li>
+            <li><a href="#" className="block px-2 py-1 hover:bg-gray-200 rounded">Profile</a></li>
+            <li><a href="#" className="block px-2 py-1 hover:bg-gray-200 rounded">Settings</a></li>
+            <li><a href="#" className="block px-2 py-1 hover:bg-gray-200 rounded">Logout</a></li>
+          </ul>
+        </aside>
+
+        {/* Main Content */}
+        <main className="flex-1 p-6 bg-white">
+          <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
+          <p className="text-gray-700">
+            This is a static layout with a responsive navbar and sidebar using Tailwind CSS.
+            Resize the screen to see how the layout adapts.
+          </p>
+        </main>
+      </div>
+    </div>
+  );
+}
