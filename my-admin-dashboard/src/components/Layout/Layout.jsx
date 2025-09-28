@@ -12,6 +12,7 @@ import Reports from '../Reports';
 import Settings from '../Settings';
 import MainContent from '../MainContent';
 
+
 const Layout = () => {
   return (
    <div className="layout-wrapper layout-content-navbar">
@@ -39,6 +40,7 @@ const Layout = () => {
           </div>
 
           <ul className="menu-inner py-1">
+
             <Dashboard />
             <Sales />
             <Purchases />
