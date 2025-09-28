@@ -1,10 +1,11 @@
 import React from 'react';
-import Sidebar from './components/Layout/Sidebar';
+import Layout from './components/Layout/Layout';
 
 const App = () => {
   return (
     <div>
-      <Sidebar/>
+      <Layout></Layout>
+      
     </div>
   );
 };
