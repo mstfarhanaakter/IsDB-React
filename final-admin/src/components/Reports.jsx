@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Reports = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = e => {
-    e.preventDefault();  // Prevent default anchor behavior
+  const toggleDropdown = (e) => {
+    e.preventDefault(); // Prevent default anchor behavior
     setIsOpen(prev => !prev);
   };
 
@@ -18,29 +19,29 @@ const Reports = () => {
       {isOpen && (
         <ul className="menu-sub">
           <li className="menu-item">
-            <a href="sales-report.html" className="menu-link">
+            <Link to="/sales-report" className="menu-link">
               <div data-i18n="Sales Report">Sales Report</div>
-            </a>
+            </Link>
           </li>
           <li className="menu-item">
-            <a href="purchase-report.html" className="menu-link">
+            <Link to="/purchase-report" className="menu-link">
               <div data-i18n="Purchase Report">Purchase Report</div>
-            </a>
+            </Link>
           </li>
           <li className="menu-item">
-            <a href="expense-report.html" className="menu-link">
+            <Link to="/expense-report" className="menu-link">
               <div data-i18n="Expense Report">Expense Report</div>
-            </a>
+            </Link>
           </li>
           <li className="menu-item">
-            <a href="profit-loss-report.html" className="menu-link">
+            <Link to="/profit-loss-report" className="menu-link">
               <div data-i18n="Profit/Loss Report">Profit/Loss Report</div>
-            </a>
+            </Link>
           </li>
           <li className="menu-item">
-            <a href="stock-report.html" className="menu-link">
+            <Link to="/stock-report" className="menu-link">
               <div data-i18n="Stock Report">Stock Report</div>
-            </a>
+            </Link>
           </li>
         </ul>
       )}

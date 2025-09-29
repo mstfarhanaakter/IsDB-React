@@ -1,3 +1,5 @@
+ 
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Sales from '../components/Sales';
@@ -13,7 +15,7 @@ import Navbar from '../components/Navbar';
 
 
 
-const MedType = () => {
+const Expense = () => {
     return (
         <>
         {/* Layout wrapper */}
@@ -79,29 +81,36 @@ const MedType = () => {
       {/* Main Content  here */}
       <div className='mt-4'>
         {/* Main Content Starts here */} 
-        
 
         <div className="container mt-2">
   <div className="card shadow-lg p-4">
-    <h4 className="mb-4">📚 Manage Medicine Types</h4>
+    <h4 className="mb-4">💸 Manage Expenses</h4>
 
-    {/* Add New Type */}
+    {/* Add New Expense */}
     <form className="row mb-4">
-      <div className="col-md-8">
-        <input type="text" className="form-control" placeholder="Enter new medicine type (e.g. Tablet)" />
-      </div>
       <div className="col-md-4">
-        <button className="btn btn-primary w-100">Add Type</button>
+        <input type="text" className="form-control" placeholder="Expense Title (e.g. Electricity Bill)" />
+      </div>
+      <div className="col-md-3">
+        <input type="number" className="form-control" placeholder="Amount (৳)" />
+      </div>
+      <div className="col-md-3">
+        <input type="date" className="form-control" placeholder="Expense Date" />
+      </div>
+      <div className="col-md-2">
+        <button className="btn btn-primary w-100">Add Expense</button>
       </div>
     </form>
 
-    {/* Table List */}
+    {/* Expense List Table */}
     <div className="table-responsive">
       <table className="table table-bordered table-striped">
         <thead className="table-primary">
           <tr className='text-center'>
             <th>#</th>
-            <th>Type Name</th>
+            <th>Expense Title</th>
+            <th>Amount (৳)</th>
+            <th>Date</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -109,27 +118,32 @@ const MedType = () => {
           {/* Example Rows */}
           <tr className='text-center'>
             <td>1</td>
-            <td>Tablet</td>
+            <td>Electricity Bill</td>
+            <td>3,500</td>
+            <td>2025-09-20</td>
             <td>
-              <button className="btn btn-sm btn-success me-2">Edit</button>
+              <button className="btn btn-sm btn-warning me-2">Edit</button>
               <button className="btn btn-sm btn-danger">Delete</button>
             </td>
           </tr>
           <tr className='text-center'>
             <td>2</td>
-            <td>Syrup</td>
+            <td>Office Rent</td>
+            <td>15,000</td>
+            <td>2025-09-01</td>
             <td>
-              <button className="btn btn-sm btn-success me-2">Edit</button>
+              <button className="btn btn-sm btn-warning me-2">Edit</button>
               <button className="btn btn-sm btn-danger">Delete</button>
             </td>
           </tr>
-          {/* More types */}
+          {/* More expenses */}
         </tbody>
       </table>
     </div>
   </div>
 </div>
 
+        
 
 
         {/* Main Content  here */}
@@ -157,4 +171,4 @@ const MedType = () => {
     );
 };
 
-export default MedType;
+export default Expense;

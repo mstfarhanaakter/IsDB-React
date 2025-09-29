@@ -1,3 +1,5 @@
+ 
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Sales from '../components/Sales';
@@ -13,7 +15,7 @@ import Navbar from '../components/Navbar';
 
 
 
-const MedType = () => {
+const RolesAndPermission = () => {
     return (
         <>
         {/* Layout wrapper */}
@@ -79,57 +81,70 @@ const MedType = () => {
       {/* Main Content  here */}
       <div className='mt-4'>
         {/* Main Content Starts here */} 
-        
+
 
         <div className="container mt-2">
   <div className="card shadow-lg p-4">
-    <h4 className="mb-4">📚 Manage Medicine Types</h4>
+    <h4 className="mb-4">🛡️ Roles & Permissions</h4>
 
-    {/* Add New Type */}
+    {/* Add New Role */}
     <form className="row mb-4">
-      <div className="col-md-8">
-        <input type="text" className="form-control" placeholder="Enter new medicine type (e.g. Tablet)" />
+      <div className="col-md-10">
+        <input type="text" className="form-control" placeholder="Enter new role name (e.g. Manager)" />
       </div>
-      <div className="col-md-4">
-        <button className="btn btn-primary w-100">Add Type</button>
+      <div className="col-md-2">
+        <button className="btn btn-primary w-100">Add Role</button>
       </div>
     </form>
 
-    {/* Table List */}
+    {/* Roles List */}
     <div className="table-responsive">
       <table className="table table-bordered table-striped">
-        <thead className="table-primary">
-          <tr className='text-center'>
+        <thead className="table-light">
+          <tr>
             <th>#</th>
-            <th>Type Name</th>
+            <th>Role Name</th>
+            <th>Permissions</th>
             <th>Action</th>
           </tr>
         </thead>
         <tbody>
-          {/* Example Rows */}
-          <tr className='text-center'>
+          {/* Example Role */}
+          <tr>
             <td>1</td>
-            <td>Tablet</td>
+            <td>Admin</td>
             <td>
-              <button className="btn btn-sm btn-success me-2">Edit</button>
+              <span className="badge bg-success me-1">Manage Users</span>
+              <span className="badge bg-success me-1">View Reports</span>
+              <span className="badge bg-success me-1">Delete Records</span>
+            </td>
+            <td>
+              <button className="btn btn-sm btn-warning me-2">Edit</button>
               <button className="btn btn-sm btn-danger">Delete</button>
             </td>
           </tr>
-          <tr className='text-center'>
+
+          <tr>
             <td>2</td>
-            <td>Syrup</td>
+            <td>Cashier</td>
             <td>
-              <button className="btn btn-sm btn-success me-2">Edit</button>
+              <span className="badge bg-info me-1">Make Sales</span>
+              <span className="badge bg-info me-1">View Stock</span>
+            </td>
+            <td>
+              <button className="btn btn-sm btn-warning me-2">Edit</button>
               <button className="btn btn-sm btn-danger">Delete</button>
             </td>
           </tr>
-          {/* More types */}
+
+          {/* More Roles */}
         </tbody>
       </table>
     </div>
   </div>
 </div>
 
+        
 
 
         {/* Main Content  here */}
@@ -157,4 +172,4 @@ const MedType = () => {
     );
 };
 
-export default MedType;
+export default RolesAndPermission;

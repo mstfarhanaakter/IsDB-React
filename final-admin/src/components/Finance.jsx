@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Finance = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => {
+  const toggleDropdown = (e) => {
+    e.preventDefault(); // prevent page refresh
     setIsOpen(prev => !prev);
   };
 
@@ -17,19 +19,19 @@ const Finance = () => {
       {isOpen && (
         <ul className="menu-sub">
           <li className="menu-item">
-            <a href="revenue.html" className="menu-link">
+            <Link to="/revenue" className="menu-link">
               <div data-i18n="Revenue">Revenue</div>
-            </a>
+            </Link>
           </li>
           <li className="menu-item">
-            <a href="expenses.html" className="menu-link">
+            <Link to="/expense" className="menu-link">
               <div data-i18n="Expenses">Expenses</div>
-            </a>
+            </Link>
           </li>
           <li className="menu-item">
-            <a href="profit-reports.html" className="menu-link">
+            <Link to="/profit-report" className="menu-link">
               <div data-i18n="Profit Reports">Profit Reports</div>
-            </a>
+            </Link>
           </li>
         </ul>
       )}

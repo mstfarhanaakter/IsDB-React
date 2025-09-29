@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Customers = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => {
+  const toggleDropdown = e => {
+    e.preventDefault(); // prevent "#" reload
     setIsOpen(prev => !prev);
   };
 
@@ -16,16 +18,17 @@ const Customers = () => {
 
       {isOpen && (
         <ul className="menu-sub">
-          <li className="menu-item">
-            <a href="customer-list.html" className="menu-link">
+           <li className="menu-item">
+            <Link to="/manage-customer" className="menu-link">
+              <div data-i18n="Add Customer">Manage Customer</div>
+            </Link>
+          </li>
+          {/* <li className="menu-item">
+            <Link to="/customers" className="menu-link">
               <div data-i18n="Customer List">Customer List</div>
-            </a>
-          </li>
-          <li className="menu-item">
-            <a href="add-customer.html" className="menu-link">
-              <div data-i18n="Add Customer">Add Customer</div>
-            </a>
-          </li>
+            </Link>
+          </li> */}
+         
         </ul>
       )}
     </li>

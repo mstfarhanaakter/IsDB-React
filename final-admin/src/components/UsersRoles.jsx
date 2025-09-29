@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const UsersRoles = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => {
+  const toggleDropdown = e => {
+    e.preventDefault(); // prevent "#" reload
     setIsOpen(prev => !prev);
   };
 
@@ -17,14 +19,14 @@ const UsersRoles = () => {
       {isOpen && (
         <ul className="menu-sub">
           <li className="menu-item">
-            <a href="user-management.html" className="menu-link">
+            <Link to="/user-management" className="menu-link">
               <div data-i18n="User Management">User Management</div>
-            </a>
+            </Link>
           </li>
           <li className="menu-item">
-            <a href="roles-permissions.html" className="menu-link">
+            <Link to="/roles-permissions" className="menu-link">
               <div data-i18n="Roles & Permissions">Roles & Permissions</div>
-            </a>
+            </Link>
           </li>
         </ul>
       )}

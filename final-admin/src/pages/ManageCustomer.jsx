@@ -13,7 +13,7 @@ import Navbar from '../components/Navbar';
 
 
 
-const MedType = () => {
+const ManageCustomer = () => {
     return (
         <>
         {/* Layout wrapper */}
@@ -78,58 +78,72 @@ const MedType = () => {
 
       {/* Main Content  here */}
       <div className='mt-4'>
-        {/* Main Content Starts here */} 
-        
+        {/* Main Content Starts here */}
 
         <div className="container mt-2">
   <div className="card shadow-lg p-4">
-    <h4 className="mb-4">📚 Manage Medicine Types</h4>
+    <h4 className="mb-4">👥 Manage Customers</h4>
 
-    {/* Add New Type */}
+    {/* Add New Customer */}
     <form className="row mb-4">
-      <div className="col-md-8">
-        <input type="text" className="form-control" placeholder="Enter new medicine type (e.g. Tablet)" />
+      <div className="col-md-3">
+        <input type="text" className="form-control" placeholder="Customer Name" />
       </div>
-      <div className="col-md-4">
-        <button className="btn btn-primary w-100">Add Type</button>
+      <div className="col-md-3">
+        <input type="text" className="form-control" placeholder="Phone Number" />
+      </div>
+      <div className="col-md-3">
+        <input type="text" className="form-control" placeholder="Address" />
+      </div>
+      <div className="col-md-3">
+        <button className="btn btn-primary w-100">Add Customer</button>
       </div>
     </form>
 
-    {/* Table List */}
+    {/* Customer List Table */}
     <div className="table-responsive">
       <table className="table table-bordered table-striped">
         <thead className="table-primary">
           <tr className='text-center'>
             <th>#</th>
-            <th>Type Name</th>
+            <th>Customer Name</th>
+            <th>Phone</th>
+            <th>Address</th>
             <th>Action</th>
           </tr>
         </thead>
         <tbody>
-          {/* Example Rows */}
-          <tr className='text-center'>
+          {/* Example Customers */}
+          <tr>
             <td>1</td>
-            <td>Tablet</td>
-            <td>
-              <button className="btn btn-sm btn-success me-2">Edit</button>
+            <td>John Doe</td>
+            <td>01712564773</td>
+            <td>Dhaka, Bangladesh</td>
+            
+            <td className='text-center'>
+              <button className="btn btn-sm btn-warning me-2">Edit</button>
               <button className="btn btn-sm btn-danger">Delete</button>
             </td>
           </tr>
-          <tr className='text-center'>
+          <tr>
             <td>2</td>
-            <td>Syrup</td>
-            <td>
-              <button className="btn btn-sm btn-success me-2">Edit</button>
+            <td>Shamim Hossain</td>
+            <td>01812345667</td>
+            <td>Chittagong, Bangladesh</td>
+            
+            <td className='text-center'>
+              <button className="btn btn-sm btn-warning me-2">Edit</button>
               <button className="btn btn-sm btn-danger">Delete</button>
             </td>
           </tr>
-          {/* More types */}
+          {/* More customers */}
         </tbody>
       </table>
     </div>
   </div>
 </div>
-
+ 
+        
 
 
         {/* Main Content  here */}
@@ -157,4 +171,4 @@ const MedType = () => {
     );
 };
 
-export default MedType;
+export default ManageCustomer;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Sales from '../components/Sales';
 import Purchases from '../components/Purchase';
@@ -10,10 +10,12 @@ import UsersRoles from '../components/UsersRoles';
 import Reports from '../components/Reports';
 import Settings from '../components/Settings';
 import Navbar from '../components/Navbar';
+// import ReactToPrint from 'react-to-print';
 
 
 
-const MedType = () => {
+const ProfitReport  = () => {
+    const componentRef = useRef();
     return (
         <>
         {/* Layout wrapper */}
@@ -79,57 +81,51 @@ const MedType = () => {
       {/* Main Content  here */}
       <div className='mt-4'>
         {/* Main Content Starts here */} 
-        
 
-        <div className="container mt-2">
-  <div className="card shadow-lg p-4">
-    <h4 className="mb-4">📚 Manage Medicine Types</h4>
-
-    {/* Add New Type */}
-    <form className="row mb-4">
-      <div className="col-md-8">
-        <input type="text" className="form-control" placeholder="Enter new medicine type (e.g. Tablet)" />
+         <div className="container mt-2">
+      <div className="d-flex justify-content-between mb-3">
+        <h4>📊 Profit Report</h4>
+        <ReactToPrint
+          trigger={() => <button className="btn btn-secondary">Print Report</button>}
+          content={() => componentRef.current}
+        />
       </div>
-      <div className="col-md-4">
-        <button className="btn btn-primary w-100">Add Type</button>
-      </div>
-    </form>
 
-    {/* Table List */}
-    <div className="table-responsive">
-      <table className="table table-bordered table-striped">
-        <thead className="table-primary">
-          <tr className='text-center'>
-            <th>#</th>
-            <th>Type Name</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {/* Example Rows */}
-          <tr className='text-center'>
-            <td>1</td>
-            <td>Tablet</td>
-            <td>
-              <button className="btn btn-sm btn-success me-2">Edit</button>
-              <button className="btn btn-sm btn-danger">Delete</button>
-            </td>
-          </tr>
-          <tr className='text-center'>
-            <td>2</td>
-            <td>Syrup</td>
-            <td>
-              <button className="btn btn-sm btn-success me-2">Edit</button>
-              <button className="btn btn-sm btn-danger">Delete</button>
-            </td>
-          </tr>
-          {/* More types */}
-        </tbody>
-      </table>
+      <div ref={componentRef} className="card shadow-lg p-4">
+        {/* ... তোমার আগের রিপোর্ট টেবিল */}
+        <table className="table table-bordered table-striped">
+          <thead className="table-light">
+            <tr>
+              <th>#</th>
+              <th>Date</th>
+              <th>Total Sales (৳)</th>
+              <th>Total Purchases (৳)</th>
+              <th>Expenses (৳)</th>
+              <th>Net Profit (৳)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>2025-09-25</td>
+              <td>75,000</td>
+              <td>45,000</td>
+              <td>5,000</td>
+              <td><strong>25,000</strong></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>2025-09-26</td>
+              <td>85,000</td>
+              <td>50,000</td>
+              <td>4,000</td>
+              <td><strong>31,000</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-  </div>
-</div>
-
+        
 
 
         {/* Main Content  here */}
@@ -157,4 +153,4 @@ const MedType = () => {
     );
 };
 
-export default MedType;
+export default ProfitReport ;

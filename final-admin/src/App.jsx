@@ -16,6 +16,15 @@ import ExpireMed from './pages/ExpireMed';
 import DamageMed from './pages/DamageMed';
 import AddMed from './pages/AddMed';
 import MedType from './pages/MedType';
+import Revenue from './pages/Revenue';
+import Expense from './pages/Expense';
+import ProfitReport from './pages/ProfitReport';
+import ManageCustomer from './pages/ManageCustomer';
+import ManageSuppliers from './pages/ManageSuppliers';
+import UserManagement from './pages/UserManagement';
+import RolesAndPermission from './pages/RolesAndPermission';
+// import Layout from './components/Layout';
+
 
 
 
@@ -27,6 +36,9 @@ const App = () => {
    <>
    <BrowserRouter>
    <Routes>
+   
+    {/* <Route path="/" element={<Layout />} ></Route> */}
+    
     <Route path="/" element={<Home />} ></Route>
     <Route path="/newsale" element={<Newsale />} ></Route>
     <Route path="/manage-sales" element={<Managesales />} ></Route>
@@ -42,6 +54,14 @@ const App = () => {
     <Route path="/damage-med" element={<DamageMed />} ></Route>
     <Route path="/add-med" element={<AddMed />} ></Route>
     <Route path="/med-type" element={<MedType />} ></Route>
+    <Route path="/revenue" element={<Revenue />} ></Route>
+    <Route path="/expense" element={<Expense />} ></Route>
+    <Route path="/profit-report" element={<ProfitReport />} ></Route>
+    <Route path="/manage-customer" element={<ManageCustomer />} ></Route>
+    <Route path="/manage-suppliers" element={<ManageSuppliers />} ></Route>
+    <Route path="/user-management" element={<UserManagement />} ></Route>
+    <Route path="/roles-permissions" element={<RolesAndPermission />} ></Route>
+
     
     
     

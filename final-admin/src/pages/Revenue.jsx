@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Sales from '../components/Sales';
@@ -13,7 +14,7 @@ import Navbar from '../components/Navbar';
 
 
 
-const MedType = () => {
+const Revenue = () => {
     return (
         <>
         {/* Layout wrapper */}
@@ -83,15 +84,18 @@ const MedType = () => {
 
         <div className="container mt-2">
   <div className="card shadow-lg p-4">
-    <h4 className="mb-4">📚 Manage Medicine Types</h4>
+    <h4 className="mb-4">💰 Revenue Report</h4>
 
-    {/* Add New Type */}
+    {/* Filter Form (Optional) */}
     <form className="row mb-4">
-      <div className="col-md-8">
-        <input type="text" className="form-control" placeholder="Enter new medicine type (e.g. Tablet)" />
+      <div className="col-md-4">
+        <input type="date" className="form-control" placeholder="Start Date" />
       </div>
       <div className="col-md-4">
-        <button className="btn btn-primary w-100">Add Type</button>
+        <input type="date" className="form-control" placeholder="End Date" />
+      </div>
+      <div className="col-md-4">
+        <button className="btn btn-primary w-100">Filter</button>
       </div>
     </form>
 
@@ -101,29 +105,25 @@ const MedType = () => {
         <thead className="table-primary">
           <tr className='text-center'>
             <th>#</th>
-            <th>Type Name</th>
-            <th>Action</th>
+            <th>Date</th>
+            <th>Total Sales (৳)</th>
+            <th>Total Purchases (৳)</th>
+            <th>Discounts (৳)</th>
+            <th>Returns (৳)</th>
+            <th className='font-bold text-success'>Net Revenue (৳)</th>
           </tr>
         </thead>
         <tbody>
           {/* Example Rows */}
           <tr className='text-center'>
             <td>1</td>
-            <td>Tablet</td>
-            <td>
-              <button className="btn btn-sm btn-success me-2">Edit</button>
-              <button className="btn btn-sm btn-danger">Delete</button>
-            </td>
+            <td>2025-09-25</td>
+            <td>50,000</td>
+            <td>30,000</td>
+            <td>2,000</td>
+            <td>1,000</td>
+            <td><strong>17,000</strong></td>
           </tr>
-          <tr className='text-center'>
-            <td>2</td>
-            <td>Syrup</td>
-            <td>
-              <button className="btn btn-sm btn-success me-2">Edit</button>
-              <button className="btn btn-sm btn-danger">Delete</button>
-            </td>
-          </tr>
-          {/* More types */}
         </tbody>
       </table>
     </div>
@@ -157,4 +157,4 @@ const MedType = () => {
     );
 };
 
-export default MedType;
+export default Revenue;

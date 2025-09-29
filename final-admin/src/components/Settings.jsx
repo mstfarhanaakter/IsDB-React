@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Settings = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = e => {
+  const toggleDropdown = (e) => {
     e.preventDefault();
     setIsOpen(prev => !prev);
   };
@@ -18,19 +19,19 @@ const Settings = () => {
       {isOpen && (
         <ul className="menu-sub">
           <li className="menu-item">
-            <a href="pharmacy-profile.html" className="menu-link">
+            <Link to="/pharmacy-profile" className="menu-link">
               <div data-i18n="Pharmacy Profile">Pharmacy Profile</div>
-            </a>
+            </Link>
           </li>
           <li className="menu-item">
-            <a href="notification-settings.html" className="menu-link">
+            <Link to="/notification-settings" className="menu-link">
               <div data-i18n="Notification Settings">Notification Settings</div>
-            </a>
+            </Link>
           </li>
           <li className="menu-item">
-            <a href="backup-restore.html" className="menu-link">
+            <Link to="/backup-restore" className="menu-link">
               <div data-i18n="Backup & Restore">Backup & Restore</div>
-            </a>
+            </Link>
           </li>
         </ul>
       )}

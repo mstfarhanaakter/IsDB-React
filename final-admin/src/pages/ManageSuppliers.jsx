@@ -1,3 +1,5 @@
+ 
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Sales from '../components/Sales';
@@ -13,7 +15,7 @@ import Navbar from '../components/Navbar';
 
 
 
-const MedType = () => {
+const ManageSuppliers = () => {
     return (
         <>
         {/* Layout wrapper */}
@@ -79,57 +81,71 @@ const MedType = () => {
       {/* Main Content  here */}
       <div className='mt-4'>
         {/* Main Content Starts here */} 
-        
 
         <div className="container mt-2">
   <div className="card shadow-lg p-4">
-    <h4 className="mb-4">📚 Manage Medicine Types</h4>
+    <h4 className="mb-4">🏭 Manage Suppliers</h4>
 
-    {/* Add New Type */}
+    {/* Add New Supplier */}
     <form className="row mb-4">
-      <div className="col-md-8">
-        <input type="text" className="form-control" placeholder="Enter new medicine type (e.g. Tablet)" />
+      <div className="col-md-3">
+        <input type="text" className="form-control" placeholder="Supplier Name" />
       </div>
-      <div className="col-md-4">
-        <button className="btn btn-primary w-100">Add Type</button>
+      <div className="col-md-3">
+        <input type="text" className="form-control" placeholder="Phone Number" />
+      </div>
+      <div className="col-md-3">
+        <input type="text" className="form-control" placeholder="Address" />
+      </div>
+      <div className="col-md-3">
+        <button className="btn btn-primary w-100">Add Supplier</button>
       </div>
     </form>
 
-    {/* Table List */}
+    {/* Supplier List Table */}
     <div className="table-responsive">
       <table className="table table-bordered table-striped">
         <thead className="table-primary">
           <tr className='text-center'>
             <th>#</th>
-            <th>Type Name</th>
+            <th>Supplier Name</th>
+            <th>Phone</th>
+            <th>Address</th>
             <th>Action</th>
           </tr>
         </thead>
         <tbody>
-          {/* Example Rows */}
-          <tr className='text-center'>
+          {/* Example Supplier Row */}
+          <tr>
             <td>1</td>
-            <td>Tablet</td>
-            <td>
-              <button className="btn btn-sm btn-success me-2">Edit</button>
+            <td>ABC Pharmaceuticals</td>
+            <td>01915382166</td>
+            <td>Uttara, Dhaka</td>
+            
+            <td className='text-center'>
+              <button className="btn btn-sm btn-warning me-2">Edit</button>
               <button className="btn btn-sm btn-danger">Delete</button>
             </td>
           </tr>
-          <tr className='text-center'>
+          <tr>
             <td>2</td>
-            <td>Syrup</td>
-            <td>
-              <button className="btn btn-sm btn-success me-2">Edit</button>
+            <td>Global Meds Ltd.</td>
+            <td>01723457884</td>
+            <td>Mohakhali, Dhaka</td>
+           
+            <td className='text-center'>
+              <button className="btn btn-sm btn-warning me-2">Edit</button>
               <button className="btn btn-sm btn-danger">Delete</button>
             </td>
           </tr>
-          {/* More types */}
+          {/* More suppliers */}
         </tbody>
       </table>
     </div>
   </div>
 </div>
 
+        
 
 
         {/* Main Content  here */}
@@ -157,4 +173,4 @@ const MedType = () => {
     );
 };
 
-export default MedType;
+export default ManageSuppliers;

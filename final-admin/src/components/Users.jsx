@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import userImg from '../assets/assets/img/avatars/cancan.png'
 
 const Users = () => {
   return (
@@ -12,7 +14,7 @@ const Users = () => {
       >
         <div className="avatar avatar-online">
           <img
-            src="/src/assets/assets/img/avatars/cancan.png"
+            src={userImg} // keep this in /public/assets/img/avatars/
             alt="User Avatar"
             className="w-px-40 h-auto rounded-circle"
           />
@@ -20,12 +22,12 @@ const Users = () => {
       </a>
       <ul className="dropdown-menu dropdown-menu-end">
         <li>
-          <a className="dropdown-item" href="#">
+          <div className="dropdown-item">
             <div className="d-flex">
               <div className="flex-shrink-0 me-3">
                 <div className="avatar avatar-online">
                   <img
-                    src="/src/assets/assets/img/avatars/cancan.png"
+                    src={userImg}
                     alt="User Avatar"
                     className="w-px-40 h-auto rounded-circle"
                   />
@@ -36,25 +38,25 @@ const Users = () => {
                 <small className="text-muted">Admin</small>
               </div>
             </div>
-          </a>
+          </div>
         </li>
+
+        <li><div className="dropdown-divider" /></li>
+
         <li>
-          <div className="dropdown-divider" />
-        </li>
-        <li>
-          <a className="dropdown-item" href="#">
+          <Link to="/profile" className="dropdown-item">
             <i className="bx bx-user me-2" />
             <span className="align-middle">My Profile</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="dropdown-item" href="#">
+          <Link to="/settings" className="dropdown-item">
             <i className="bx bx-cog me-2" />
             <span className="align-middle">Settings</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="dropdown-item" href="#">
+          <Link to="/billing" className="dropdown-item">
             <span className="d-flex align-items-center align-middle">
               <i className="flex-shrink-0 bx bx-credit-card me-2" />
               <span className="flex-grow-1 align-middle">Billing</span>
@@ -62,16 +64,16 @@ const Users = () => {
                 4
               </span>
             </span>
-          </a>
+          </Link>
         </li>
+
+        <li><div className="dropdown-divider" /></li>
+
         <li>
-          <div className="dropdown-divider" />
-        </li>
-        <li>
-          <a className="dropdown-item" href="auth-login-basic.html">
+          <Link to="/login" className="dropdown-item">
             <i className="bx bx-power-off me-2" />
             <span className="align-middle">Log Out</span>
-          </a>
+          </Link>
         </li>
       </ul>
     </li>

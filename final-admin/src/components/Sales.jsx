@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 const Sales = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => {
+  const toggleDropdown = (e) => {
+    e.preventDefault(); // Prevents unwanted page reload
     setIsOpen(prev => !prev);
   };
 
@@ -18,24 +19,24 @@ const Sales = () => {
       {isOpen && (
         <ul className="menu-sub">
           <li className="menu-item">
-            <a href="" className="menu-link">
-              <div data-i18n="New Sale "><Link to='/newsale'>New Sale</Link></div>
-            </a>
+            <Link to="/newsale" className="menu-link">
+              <div data-i18n="New Sale">New Sale</div>
+            </Link>
           </li>
           <li className="menu-item">
-            <a href="" className="menu-link">
-              <div data-i18n="Sales List"><Link to="/manage-sales">Manage Sales</Link></div>
-            </a>
+            <Link to="/manage-sales" className="menu-link">
+              <div data-i18n="Sales List">Manage Sales</div>
+            </Link>
           </li>
           <li className="menu-item">
-            <a href="sale-returns.html" className="menu-link">
-              <div data-i18n="Sale Returns"><Link to="/sales-return">Sale Returns</Link></div>
-            </a>
+            <Link to="/sales-return" className="menu-link">
+              <div data-i18n="Sale Returns">Sale Returns</div>
+            </Link>
           </li>
           <li className="menu-item">
-            <a href="sale-returns.html" className="menu-link">
-              <div data-i18n="Sale Returns"><Link to="/manage-sales-return">Manage Sales Returns</Link></div>
-            </a>
+            <Link to="/manage-sales-return" className="menu-link">
+              <div data-i18n="Manage Sale Returns">Manage Sales Returns</div>
+            </Link>
           </li>
         </ul>
       )}

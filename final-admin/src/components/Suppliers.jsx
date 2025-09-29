@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Suppliers = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => {
-    setIsOpen(prev => !prev);
+  const toggleDropdown = (e) => {
+    e.preventDefault();
+    setIsOpen((prev) => !prev);
   };
 
   return (
@@ -17,15 +19,15 @@ const Suppliers = () => {
       {isOpen && (
         <ul className="menu-sub">
           <li className="menu-item">
-            <a href="supplier-list.html" className="menu-link">
-              <div data-i18n="Supplier List">Supplier List</div>
-            </a>
+            <Link to="/manage-suppliers" className="menu-link">
+              <div data-i18n="Supplier List"> Manage Supplier</div>
+            </Link>
           </li>
-          <li className="menu-item">
-            <a href="add-supplier.html" className="menu-link">
+          {/* <li className="menu-item">
+            <Link to="/add-supplier" className="menu-link">
               <div data-i18n="Add Supplier">Add Supplier</div>
-            </a>
-          </li>
+            </Link>
+          </li> */}
         </ul>
       )}
     </li>
