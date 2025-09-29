@@ -1,0 +1,17 @@
+.menu-sub {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.menu-link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.menu-item.open > .menu-link {
+  font-weight: bold;
+}
