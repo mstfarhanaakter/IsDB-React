@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Sales = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,18 +18,23 @@ const Sales = () => {
       {isOpen && (
         <ul className="menu-sub">
           <li className="menu-item">
-            <a href="new-sale.html" className="menu-link">
-              <div data-i18n="New Sale / Invoice">New Sale</div>
+            <a href="" className="menu-link">
+              <div data-i18n="New Sale "><Link to='/newsale'>New Sale</Link></div>
             </a>
           </li>
           <li className="menu-item">
-            <a href="sales-list.html" className="menu-link">
-              <div data-i18n="Sales List">Sales List</div>
+            <a href="" className="menu-link">
+              <div data-i18n="Sales List"><Link to="/manage-sales">Manage Sales</Link></div>
             </a>
           </li>
           <li className="menu-item">
             <a href="sale-returns.html" className="menu-link">
-              <div data-i18n="Sale Returns">Sale Returns</div>
+              <div data-i18n="Sale Returns"><Link to="/sales-return">Sale Returns</Link></div>
+            </a>
+          </li>
+          <li className="menu-item">
+            <a href="sale-returns.html" className="menu-link">
+              <div data-i18n="Sale Returns"><Link to="/manage-sales-return">Manage Sales Returns</Link></div>
             </a>
           </li>
         </ul>

@@ -1,5 +1,3 @@
-import React from 'react';
-import DropdownMenu from './DropdownMenu';
 import Customers from './Customers';
 import Finance from './Finance';
 import Sales from './Sales';
@@ -9,17 +7,20 @@ import Suppliers from './Suppliers';
 import UsersRoles from './UsersRoles';
 import Reports from './Reports';
 import Settings from './Settings';
-import RevenueCard from './RevenueCard';
-import MedicineStatistics from './MedicineStatistics';
-import ExpanseOverview from './ExpanseOverview';
-import Transactions from './Transaction';
 import Navbar from './Navbar';
-import { Link } from 'react-router-dom';
 
-const Layout = () => {
-    return (
-        <>
-        {/* Layout wrapper */}
+
+
+<!-- #############################  -->
+ 
+  <Route path="/" element={< />} ></Route>
+
+
+<!-- ==================== -->
+
+
+
+{/* Layout wrapper */}
 <div className="layout-wrapper layout-content-navbar">
   <div className="layout-container">
     {/* Menu */}
@@ -74,12 +75,16 @@ const Layout = () => {
       {/* / Navbar */}
 
 
+{/* ================================================ */}
+{/* ================================================ */}
+{/* ================================================ */}
 
 
-
-      {/* Main Content Starts here */}
+      {/* Main Content  here */}
       <div className='ms-4 mt-4'>
-         {/* Main Content Starts here */} 
+        
+        {/* Main Content Starts here */} 
+        
         <h1>Hello </h1>
       </div>
       {/* Main Content ends here */}
@@ -94,11 +99,3 @@ const Layout = () => {
   {/* Overlay */}
   <div className="layout-overlay layout-menu-toggle" />
 </div>
-{/* / Layout wrapper */}
-
-
-        </>
-    );
-};
-
-export default Layout;

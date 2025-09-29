@@ -1,22 +1,19 @@
 import React from 'react';
-import DropdownMenu from './DropdownMenu';
-import Customers from './Customers';
-import Finance from './Finance';
-import Sales from './Sales';
-import Purchases from './Purchase';
-import Stock from './Stock';
-import Suppliers from './Suppliers';
-import UsersRoles from './UsersRoles';
-import Reports from './Reports';
-import Settings from './Settings';
-import RevenueCard from './RevenueCard';
-import MedicineStatistics from './MedicineStatistics';
-import ExpanseOverview from './ExpanseOverview';
-import Transactions from './Transaction';
-import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
+import Sales from '../components/Sales';
+import Purchases from '../components/Purchase';
+import Stock from '../components/Stock';
+import Finance from '../components/Finance';
+import Customers from '../components/Customers';
+import Suppliers from '../components/Suppliers';
+import UsersRoles from '../components/UsersRoles';
+import Reports from '../components/Reports';
+import Settings from '../components/Settings';
+import Navbar from '../components/Navbar';
 
-const Layout = () => {
+
+
+const MasterTemplate = () => {
     return (
         <>
         {/* Layout wrapper */}
@@ -39,9 +36,9 @@ const Layout = () => {
       <ul className="menu-inner py-1">
         {/* Dashboard */}
         <li className="menu-item active">
-          <a href="index.html" className="menu-link">
+          <a href="" className="menu-link">
             <i className="menu-icon tf-icons bx bx-home-circle" />
-            <div data-i18n="Analytics">Dashboard</div>
+            <div data-i18n="Analytics"><Link to="/">Dashboard</Link></div>
           </a>
         </li>
 
@@ -74,13 +71,18 @@ const Layout = () => {
       {/* / Navbar */}
 
 
+{/* ================================================ */}
+{/* ================================================ */}
+{/* ================================================ */}
 
 
+      {/* Main Content  here */}
+      <div className='mt-4'>
+        {/* Main Content Starts here */} 
+        
 
-      {/* Main Content Starts here */}
-      <div className='ms-4 mt-4'>
-         {/* Main Content Starts here */} 
-        <h1>Hello </h1>
+
+        {/* Main Content  here */}
       </div>
       {/* Main Content ends here */}
 
@@ -94,11 +96,15 @@ const Layout = () => {
   {/* Overlay */}
   <div className="layout-overlay layout-menu-toggle" />
 </div>
-{/* / Layout wrapper */}
+        
 
 
+
+
+           
+ 
         </>
     );
 };
 
-export default Layout;
+export default MasterTemplate;
