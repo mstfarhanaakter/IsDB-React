@@ -20,19 +20,19 @@ const UsersRolesDropdown = () => {
        <ul className="menu-sub">
           <li className="menu-item">
             <Link to="/users" className="menu-link">
-              <div data-i18n="Users">Users</div>
+              <div data-i18n="Users">Add New Users</div>
             </Link>
           </li>
           <li className="menu-item">
-            <Link to="/roles" className="menu-link">
-              <div data-i18n="Roles">Roles</div>
+            <Link to="/manage-roles" className="menu-link">
+              <div data-i18n="Roles">Manage Users</div>
             </Link>
           </li>
-          <li className="menu-item">
+          {/* <li className="menu-item">
             <Link to="/permissions" className="menu-link">
               <div data-i18n="Permissions">Permissions</div>
             </Link>
-          </li>
+          </li> */}
         </ul>
       )}
     </li>

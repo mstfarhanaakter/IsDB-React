@@ -19,8 +19,8 @@ const PackagesToursDropdown = () => {
       {isOpen && (
         <ul className="menu-sub">
           <li className="menu-item">
-            <Link to="/new-package" className="menu-link">
-              <div data-i18n="New Package">New Package</div>
+            <Link to="/add-package" className="menu-link">
+              <div data-i18n="New Package">Add Package</div>
             </Link>
           </li>
           <li className="menu-item">
@@ -29,7 +29,7 @@ const PackagesToursDropdown = () => {
             </Link>
           </li>
           <li className="menu-item">
-            <Link to="/new-tour" className="menu-link">
+            <Link to="/add-tour" className="menu-link">
               <div data-i18n="New Tour">New Tour</div>
             </Link>
           </li>

@@ -42,7 +42,7 @@ export default function LayoutCopy() {
               color: black !important;
             }
             #layout-menu a:hover {
-              color: #ffd700 !important; /* Optional hover color */
+              color: white !important; /* Optional hover color */
             }
           `}</style>
 
