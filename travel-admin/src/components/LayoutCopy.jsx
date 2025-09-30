@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
+
+import Navbar from "./Navbar";
 import UsersRolesDropdown from "./UsersRolesDropdown";
 import PackagesToursDropdown from "./PackagesToursDropdown";
 import BookingsDropdown from "./BookingsDropdown";
@@ -9,7 +11,6 @@ import SupportDropdown from "./SupportDropdown";
 import FeedbackDropdown from "./FeedbackDropdown";
 import AnalyticsDropdown from "./AnalyticsDropdown ";
 import SettingsDropdown from "./SettingsDropdown";
-import Navbar from "./Navbar";
 
 export default function LayoutCopy() {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
@@ -24,11 +25,27 @@ export default function LayoutCopy() {
       <div className="layout-container">
         <aside
           id="layout-menu"
-          className={`layout-menu menu-vertical menu bg-menu-theme ${
-            isSidebarOpen ? "" : "collapsed"
-          }`}
-          style={{ overflowY: "auto", height: "100vh" }}
+          className={`layout-menu menu-vertical menu ${isSidebarOpen ? "" : "collapsed"}`}
+          style={{
+            overflowY: "auto",
+            height: "100vh",
+            backgroundColor: "#bbd0ff",
+            color: "black",
+          }}
         >
+          {/* Embedded styles to force sidebar text and icons white */}
+          <style>{`
+            #layout-menu a,
+            #layout-menu a .menu-icon,
+            #layout-menu a div,
+            #layout-menu .menu-inner .menu-item .menu-link {
+              color: black !important;
+            }
+            #layout-menu a:hover {
+              color: #ffd700 !important; /* Optional hover color */
+            }
+          `}</style>
+
           <div className="app-brand demo">
             <Link to="/" className="app-brand-link">
               <span className="app-brand-logo demo">
@@ -46,7 +63,9 @@ export default function LayoutCopy() {
               <i className="bx bx-chevron-left bx-sm align-middle" />
             </a>
           </div>
+
           <div className="menu-inner-shadow" />
+
           <ul className="menu-inner py-1">
             <li className="menu-item active">
               <Link to="/" className="menu-link">
@@ -55,23 +74,23 @@ export default function LayoutCopy() {
               </Link>
             </li>
             {/* Your dropdowns here */}
-
-            <UsersRolesDropdown/>
-              <PackagesToursDropdown/>
-              <BookingsDropdown/>
-              <TransportStayDropdown/>
-              <PaymentsDropdown/>
-              <SupportDropdown/>
-              <FeedbackDropdown/>
-              <AnalyticsDropdown/>
-              <SettingsDropdown/>
+            <UsersRolesDropdown />
+            <PackagesToursDropdown />
+            <BookingsDropdown />
+            <TransportStayDropdown />
+            <PaymentsDropdown />
+            <SupportDropdown />
+            <FeedbackDropdown />
+            <AnalyticsDropdown />
+            <SettingsDropdown />
           </ul>
         </aside>
 
         <div className="layout-page">
           <nav
-            className="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            className="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center"
             id="layout-navbar"
+            style={{ backgroundColor: "#e9edc9" }}
           >
             <div className="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
               <a
@@ -83,11 +102,12 @@ export default function LayoutCopy() {
               </a>
             </div>
             {/* Navbar component */}
-            <Navbar/>
+            <Navbar />
           </nav>
 
           <div className="ms-4 mt-4">
             {/* Main Content */}
+            <Outlet />
           </div>
         </div>
       </div>

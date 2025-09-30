@@ -17,7 +17,7 @@ const UsersRolesDropdown = () => {
       </a>
 
       {isOpen && (
-        <ul className="menu-sub">
+       <ul className="menu-sub">
           <li className="menu-item">
             <Link to="/users" className="menu-link">
               <div data-i18n="Users">Users</div>
