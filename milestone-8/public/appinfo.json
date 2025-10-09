@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "image": "https://plus.unsplash.com/premium_vector-1720099356656-f58c700d6e57?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8U3VwZXIlMjBQcm9kdWN0aXZpdHklMjBhcHAlMjBsb2dvfGVufDB8fDB8fHww",
+    "title": "Super Productivity",
+    "companyName": "HERO.IO",
+    "description": "An app to boost your productivity and manage tasks efficiently.",
+    "size": 120,
+    "reviews": 906000,
+    "ratingAvg": 4.6,
+    "downloads": "29.6M",
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 100000 },
+      { "name": "5 star", "count": 695000 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://plus.unsplash.com/premium_vector-1721162193413-9f5986727ff1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zml0bmVzcyUyMGJ1ZGR5JTIwYXBwJTIwbG9nb3xlbnwwfHwwfHx8MA%3D%3D",
+    "title": "Fitness Buddy",
+    "companyName": "FitLife",
+    "description": "Track workouts, monitor progress, and stay motivated every day.",
+    "size": 85,
+    "reviews": 450000,
+    "ratingAvg": 4.4,
+    "downloads": "12.5M",
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 65000 },
+      { "name": "5 star", "count": 360000 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://plus.unsplash.com/premium_vector-1682301660407-28b4657aed68?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QnVkZ2V0JTIwVHJhY2tlciUyMGFwcCUyMGxvZ298ZW58MHx8MHx8fDA%3D",
+    "title": "Budget Tracker",
+    "companyName": "MoneyWise",
+    "description": "Manage your finances, track expenses, and save more efficiently.",
+    "size": 50,
+    "reviews": 320000,
+    "ratingAvg": 4.2,
+    "downloads": "8.9M",
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 5000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 45000 },
+      { "name": "5 star", "count": 258000 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://plus.unsplash.com/premium_vector-1726328606104-2b857b2a6c5b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8UmVjaXBlJTIwTWFzdGVyZSUyMGFwcCUyMGxvZ298ZW58MHx8MHx8fDA%3D",
+    "title": "Recipe Master",
+    "companyName": "Foodies",
+    "description": "Discover thousands of recipes and cooking tutorials for every occasion.",
+    "size": 75,
+    "reviews": 210000,
+    "ratingAvg": 4.5,
+    "downloads": "7.8M",
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 3000 },
+      { "name": "3 star", "count": 8000 },
+      { "name": "4 star", "count": 40000 },
+      { "name": "5 star", "count": 160000 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://plus.unsplash.com/premium_vector-1718377910808-b28b4a91176f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fFRyYXZlbCUyMEV4cGxvcmVyJTIwYXBwJTIwbG9nb3xlbnwwfHwwfHx8MA%3D%3D",
+    "title": "Travel Explorer",
+    "companyName": "Wanderlust",
+    "description": "Plan trips, explore destinations, and book flights and hotels easily.",
+    "size": 95,
+    "reviews": 380000,
+    "ratingAvg": 4.3,
+    "downloads": "10.5M",
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 6000 },
+      { "name": "3 star", "count": 12000 },
+      { "name": "4 star", "count": 55000 },
+      { "name": "5 star", "count": 305000 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://plus.unsplash.com/premium_vector-1682303804055-6e0c21281552?q=80&w=668&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Mindful Meditation",
+    "companyName": "Calmify",
+    "description": "Relax and meditate with guided sessions and mindfulness exercises.",
+    "size": 60,
+    "reviews": 210000,
+    "ratingAvg": 4.7,
+    "downloads": "7.2M",
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 30000 },
+      { "name": "5 star", "count": 175000 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://plus.unsplash.com/premium_vector-1749562552776-a83f6fcb1bf0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8UGhvdG8lMjBFZGl0b3IlMjBQcm8lMjBhcHAlMjBsb2dvfGVufDB8fDB8fHww",
+    "title": "Photo Editor Pro",
+    "companyName": "SnapTools",
+    "description": "Edit photos with professional tools and filters.",
+    "size": 110,
+    "reviews": 340000,
+    "ratingAvg": 4.5,
+    "downloads": "9.5M",
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 5000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 270000 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://plus.unsplash.com/premium_vector-1744111057945-217907c95a22?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TGFuZ3VhZ2UlMjBMZWFybmVyJTIwUHJvJTIwYXBwJTIwbG9nb3xlbnwwfHwwfHx8MA%3D%3D",
+    "title": "Language Learner",
+    "companyName": "Lingua",
+    "description": "Learn new languages with interactive lessons and quizzes.",
+    "size": 80,
+    "reviews": 290000,
+    "ratingAvg": 4.4,
+    "downloads": "8.3M",
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 3000 },
+      { "name": "3 star", "count": 12000 },
+      { "name": "4 star", "count": 50000 },
+      { "name": "5 star", "count": 220000 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://plus.unsplash.com/premium_vector-1734153572671-fcb6e5c60fea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8VGFzayUyME1hbmFnZXJ8ZW58MHx8MHx8fDA%3D",
+    "title": "Task Manager",
+    "companyName": "OrganizeIt",
+    "description": "Manage your daily tasks and projects efficiently.",
+    "size": 55,
+    "reviews": 180000,
+    "ratingAvg": 4.3,
+    "downloads": "6.7M",
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 8000 },
+      { "name": "4 star", "count": 25000 },
+      { "name": "5 star", "count": 140000 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://plus.unsplash.com/premium_vector-1736586784573-4afb5e6c247c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8SGVhbHRoeSUyMFJlY2lwZXN8ZW58MHx8MHx8fDA%3D",
+    "title": "Healthy Recipes",
+    "companyName": "NutriFood",
+    "description": "Discover and cook healthy meals with step-by-step instructions.",
+    "size": 70,
+    "reviews": 160000,
+    "ratingAvg": 4.6,
+    "downloads": "5.4M",
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 20000 },
+      { "name": "5 star", "count": 135000 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://plus.unsplash.com/premium_vector-1746140038064-344597135004?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8V2VhdGhlciUyME5vd3xlbnwwfHwwfHx8MA%3D%3D",
+    "title": "Weather Now",
+    "companyName": "ClimateTech",
+    "description": "Get real-time weather updates and forecasts.",
+    "size": 45,
+    "reviews": 120000,
+    "ratingAvg": 4.4,
+    "downloads": "4.3M",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 18000 },
+      { "name": "5 star", "count": 100000 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://plus.unsplash.com/premium_vector-1732501438030-f93d85d6853a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TXVzaWMlMjBTdHJlYW18ZW58MHx8MHx8fDA%3D",
+    "title": "Music Stream",
+    "companyName": "SoundWave",
+    "description": "Stream music and podcasts anywhere, anytime.",
+    "size": 100,
+    "reviews": 350000,
+    "ratingAvg": 4.7,
+    "downloads": "9.2M",
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 50000 },
+      { "name": "5 star", "count": 285000 }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://plus.unsplash.com/premium_vector-1721762658788-8af51eb930a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TmV3cyUyMERhaWx5fGVufDB8fDB8fHww",
+    "title": "News Daily",
+    "companyName": "GlobalNews",
+    "description": "Stay updated with the latest news worldwide.",
+    "size": 60,
+    "reviews": 220000,
+    "ratingAvg": 4.5,
+    "downloads": "6.7M",
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 7000 },
+      { "name": "4 star", "count": 30000 },
+      { "name": "5 star", "count": 160000 }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://plus.unsplash.com/premium_vector-1721077382091-f4f98604c096?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fExhbmd1YWdlJTIwVHV0b3J8ZW58MHx8MHx8fDA%3D",
+    "title": "Language Tutor",
+    "companyName": "Polyglot",
+    "description": "Learn multiple languages with interactive lessons and quizzes.",
+    "size": 90,
+    "reviews": 150000,
+    "ratingAvg": 4.6,
+    "downloads": "5.8M",
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 25000 },
+      { "name": "5 star", "count": 120000 }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://plus.unsplash.com/premium_vector-1726996879203-6597b2ffa865?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TW92aWUlMjBTdHJlYW18ZW58MHx8MHx8fDA%3D",
+    "title": "Movie Stream",
+    "companyName": "CineStream",
+    "description": "Watch movies and TV shows online anytime.",
+    "size": 130,
+    "reviews": 320000,
+    "ratingAvg": 4.7,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 3000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 285000 }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://plus.unsplash.com/premium_vector-1682298706048-d732bc58611e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VHJhdmVsJTIwR3VpZGV8ZW58MHx8MHx8fDA%3D",
+    "title": "Travel Guide",
+    "companyName": "TripPlanner",
+    "description": "Find destinations, hotels, and plan your trips easily.",
+    "size": 95,
+    "reviews": 180000,
+    "ratingAvg": 4.5,
+    "downloads": "5.5M",
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 8000 },
+      { "name": "4 star", "count": 25000 },
+      { "name": "5 star", "count": 120000 }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://plus.unsplash.com/premium_vector-1726009516332-b67b24281923?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFN0b2NrJTIwVHJhY2tlcnxlbnwwfHwwfHx8MA%3D%3D",
+    "title": "Stock Tracker",
+    "companyName": "Investify",
+    "description": "Track stocks, investments, and market trends.",
+    "size": 65,
+    "reviews": 210000,
+    "ratingAvg": 4.6,
+    "downloads": "6.7M",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 30000 },
+      { "name": "5 star", "count": 150000 }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://plus.unsplash.com/premium_vector-1720898858404-fab04c9dd3aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8WW9nYSUyMERhaWx5fGVufDB8fDB8fHww",
+    "title": "Yoga Daily",
+    "companyName": "FlexiFit",
+    "description": "Daily yoga exercises and meditation sessions.",
+    "size": 50,
+    "reviews": 140000,
+    "ratingAvg": 4.7,
+    "downloads": "4.3M",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 15000 },
+      { "name": "5 star", "count": 120000 }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://plus.unsplash.com/premium_vector-1728198730231-c77505a3fd3d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q3J5cHRvJTIwV2FsbGV0fGVufDB8fDB8fHww",
+    "title": "Crypto Wallet",
+    "companyName": "BlockChainX",
+    "description": "Manage your cryptocurrencies and track portfolio.",
+    "size": 80,
+    "reviews": 220000,
+    "ratingAvg": 4.5,
+    "downloads": "5.4M",
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 25000 },
+      { "name": "5 star", "count": 160000 }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://plus.unsplash.com/premium_vector-1716988351688-a925b615ccb3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fExhbmd1YWdlJTIwRXhjaGFuZ2V8ZW58MHx8MHx8fDA%3D",
+    "title": "Language Exchange",
+    "companyName": "TalkGlobal",
+    "description": "Practice speaking with native speakers around the world.",
+    "size": 75,
+    "reviews": 180000,
+    "ratingAvg": 4.6,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 20000 },
+      { "name": "5 star", "count": 140000 }
+    ]
+  }
+]
