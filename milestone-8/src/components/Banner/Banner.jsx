@@ -35,7 +35,7 @@ const Banner = () => {
         <div>
           <h2 className='text-[#e6dafb]'>Total Downloads</h2>
           <p className='font-bold text-3xl sm:text-4xl mt-2'>29.6M</p>
-          <p className='mt-1'>21% more than last month</p>
+          <p className='mt-1 text-[#e6dafb]'>21% more than last month</p>
         </div>
 
         <div>

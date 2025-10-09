@@ -18,7 +18,6 @@ const AppCards = ({ x }) => {
                         {x.ratingAvg}
                     </p>
                 </div>
-
             </div>
         </div>
     );
