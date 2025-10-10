@@ -16,7 +16,7 @@ const App = () => {
 
       
       <Navbar/>
-      <AppNav></AppNav>
+      {/* <AppNav></AppNav> */}
       {/* <Banner/> */}
     <Suspense fallback={<div>Loading........</div>}>
 
