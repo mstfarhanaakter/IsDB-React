@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+nav a {
+  margin: 20px;
+}
+
+nav a.active{
+  text-decoration: underline;
+}
