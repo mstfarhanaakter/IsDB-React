@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword, sendEmailVerification, updateProfile } from 'firebase/auth';
 import React, { useState } from 'react';
 import { auth } from '../firebase/firebase.init';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
@@ -25,8 +25,10 @@ const Register = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     const terms = e.target.terms.checked;
+    const name = e.target.name.value;
+    const photo = e.target.photo.value;
 
-    console.log("Form was submitted");
+    console.log("Form was submitted", name, photo);
     console.log("Email:", email);
     console.log("Password:", password);
 
@@ -67,6 +69,24 @@ const Register = () => {
         console.log("After creation of new User", result.user)
         setSuccess(true)
         e.target.reset()
+
+        //update user profile 
+
+        const profile = {
+          displayName: name,
+          photoURL: photo
+        }
+
+        updateProfile(result.user, profile)
+        .then(()=>{
+        })
+        .catch()
+
+        //send verification email 
+        sendEmailVerification(result.user)
+        .then(()=>{
+          alert("Please login to your email and verify your email address ")
+        })
       })
       .catch(error => {
         console.log("Error Happened", error.message)
@@ -85,6 +105,25 @@ const Register = () => {
             <div className="card-body">
               <form onSubmit={formSubmit}>
                 <fieldset className="fieldset">
+                  {/* user name */}
+                  <label className="label">Name</label>
+                  <input
+                    type="text"
+                    name="name"  // ✅ এখানে name অ্যাট্রিবিউট থাকতে হবে
+                    className="input"
+                    placeholder="Your Name"
+                  />
+
+                  {/* user photo */}
+                  <label className="label">Photo</label>
+                  <input
+                    type="text"
+                    name="photo"  // ✅ এখানে name অ্যাট্রিবিউট থাকতে হবে
+                    className="input"
+                    placeholder="Photo URL"
+                  />
+
+                  {/* user email */}
                   <label className="label">Email</label>
                   <input
                     type="email"
