@@ -8,6 +8,10 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import AuthProvider from './context/AuthContext/AuthProvider';
+import PrivateRoute from './components/Routes/PrivateRoute';
+import Order from './components/Order/Order';
+import Profile from './components/Profile/Profile';
+import Dashboard from './components/Dashboard/Dashboard';
 
 // export const AuthContext = createContext(null);
 // const userInfo ={
@@ -28,6 +32,26 @@ const router = createBrowserRouter([{
   {
     path: "register",
     Component: Register
+  },
+  {
+    path: 'order',
+    // Component: Order
+    element: <PrivateRoute>
+      <Order></Order>
+    </PrivateRoute>
+  },
+  {
+    path:'profile',
+    element: <PrivateRoute>
+      <Profile></Profile>
+    </PrivateRoute>
+    
+  },
+  {
+    path:'dashboard',
+    element:<PrivateRoute>
+      <Dashboard></Dashboard>
+    </PrivateRoute>
   }
 
   ]
