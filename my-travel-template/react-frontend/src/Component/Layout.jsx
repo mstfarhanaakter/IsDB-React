@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../src/App.css'
+import { Link } from 'react-router-dom';
 
 const Layout = () => {
     return (
@@ -17,8 +18,9 @@ const Layout = () => {
           <li className="nav-item px-3 px-xl-4"><a className="nav-link fw-medium" aria-current="page" href="#destination">Destination</a></li>
           <li className="nav-item px-3 px-xl-4"><a className="nav-link fw-medium" aria-current="page" href="#booking">Booking</a></li>
           <li className="nav-item px-3 px-xl-4"><a className="nav-link fw-medium" aria-current="page" href="#testimonial">Testimonial</a></li>
-          <li className="nav-item px-3 px-xl-4"><a className="nav-link fw-medium" aria-current="page" href="#!">Login</a></li>
-          <li className="nav-item px-3 px-xl-4"><a className="btn btn-outline-dark order-1 order-lg-0 fw-medium" href="#!">Sign Up</a></li>
+          <li className="nav-item px-3 px-xl-4"><a className="nav-link fw-medium" aria-current="page" href="#!">
+           <Link to='/login'>Logout</Link> </a></li>
+          {/* <li className="nav-item px-3 px-xl-4"><a className="btn btn-outline-dark order-1 order-lg-0 fw-medium" href="#!">Sign Up</a></li> */}
           <li className="nav-item dropdown px-3 px-lg-0"> <a className="d-inline-block ps-0 py-2 pe-3 text-decoration-none dropdown-toggle fw-medium" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EN</a>
             <ul className="dropdown-menu dropdown-menu-end border-0 shadow-lg" style={{borderRadius: '0.3rem'}} aria-labelledby="navbarDropdown">
               <li><a className="dropdown-item" href="#!">EN</a></li>
